@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: buildpack-deps:buster-scm
+      - image: circleci/buildpack-deps:buster-scm
     steps:
       - checkout
       - run:
