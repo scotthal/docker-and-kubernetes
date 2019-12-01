@@ -28,5 +28,5 @@ jobs:
           command: |
             . ebenv/bin/activate
             docker build -t scotthal/docker-and-kubernetes .
-            eb use server-backend-env --profile eb-cli
+            eb use DockerAndKubernetes-env --profile eb-cli
             eb deploy -v --staged --profile eb-cli
