@@ -1,0 +1,11 @@
+branch-defaults:
+  master:
+    environment: DockerAndKubernetes-env
+global:
+  application_name: docker-and-kubernetes
+  default_ec2_keyname: scotthal
+  default_platform: Docker
+  default_region: us-west-1
+  profile: eb-cli
+  sc: git
+  workspace_type: Application
