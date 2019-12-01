@@ -6,6 +6,6 @@ jobs:
     steps:
       - checkout
       - run:
-        command: |
-          docker build -t scotthal/docker-and-kubernetes -f Dockerfile.dev .
-          docker run -e CI=true scotthal/docker-and-kubernetes npm run test
+          command: |
+            docker build -t scotthal/docker-and-kubernetes -f Dockerfile.dev .
+            docker run -e CI=true scotthal/docker-and-kubernetes npm run test
