@@ -15,7 +15,7 @@ jobs:
           name: Elastic Beanstalk Dependencies
           command: |
             python -m venv ebenv
-            cd ebenv
+            . ebenv/bin/activate
             pip install awsebcli --upgrade
             mkdir ~/.aws
             touch ~/.aws/config
